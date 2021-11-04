@@ -8,6 +8,7 @@ const fetchShow = async (url) => {
 const form = document.querySelector('#search-form');
 const target = document.querySelector('#target');
 const query = document.querySelector('#query');
+const body= document.querySelector('body');
 
 form.addEventListener('submit', async (ev) => {
   ev.preventDefault();
@@ -25,7 +26,7 @@ form.addEventListener('submit', async (ev) => {
     img.setAttribute('id', 'imgNo');
     img.src = 'Welcome.png';
     img.alt = 'Welcome! What shows do you want to look up?';
-    target.appendChild(img);
+    body.appendChild(img);
   } else {
     for (let i = 0; i < tvShows.length; i++) {
       console.log(tvShows[i].show.name)
@@ -55,13 +56,23 @@ form.addEventListener('submit', async (ev) => {
         img.src = tvShows[i].show.image.medium;
         img.alt = tvShows[i].show.name;
       }
+      target.appendChild(article);
+      article.appendChild(header);
+      header.appendChild(h2);
+      h2.appendChild(showName);
+      article.appendChild(figure);
+      figure.appendChild(img);
 
       if (tvShows[i].show.officialSite == null) {
+        figure.appendChild(p);
         let error = document.createTextNode('Sites not found');
+
         p.appendChild(error);
       } else {
+        figure.appendChild(a);
         a.setAttribute('href', tvShows[i].show.officialSite);
         a.innerHTML = tvShows[i].show.name;
+
       }
 
       if (tvShows[i].show.genres == 0) {
@@ -71,22 +82,15 @@ form.addEventListener('submit', async (ev) => {
             'Genres: ' + tvShows[i].show.genres);
       }
 
-      target.appendChild(article);
-      article.appendChild(header);
-      header.appendChild(h2);
-      h2.appendChild(showName);
-      article.appendChild(figure);
-      figure.appendChild(img);
-      figure.appendChild(p);
-      figure.appendChild(a);
       figure.appendChild(p2);
-      figure.appendChild(p3);
       p2.appendChild(genresText);
 
       if (tvShows[i].show.summary == 0) {
+        figure.appendChild(p3);
         summaryText = document.createTextNode('Summary not found');
         p3.appendChild(summaryText);
       } else if (tvShows[i].show.summary == null) {
+        figure.appendChild(p3);
         summaryText = document.createTextNode('Summary not found');
         p3.appendChild(summaryText);
       } else {
