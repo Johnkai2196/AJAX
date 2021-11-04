@@ -50,7 +50,7 @@ form.addEventListener('submit', async (ev) => {
         showName = document.createTextNode(tvShows[i].show.name);
       }
       if (tvShows[i].show.image == null) {
-        img.src = 'noPicture.jpg';
+        img.src = 'img/noPicture.jpg';
         img.alt = '404 no image';
       } else {
         img.src = tvShows[i].show.image.medium;
