@@ -2,8 +2,9 @@ html {
     font-family: Verdana, Arial, Helvetica;
 }
 
-h1 {
-    background-color: #A9D3FF;
+h1{
+    background-color: #BAA5FF;
+
     padding: 5px;
     margin-top: 0;
     margin-bottom: 20px;
@@ -11,7 +12,13 @@ h1 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
 
-
+#home:link,#home:visited{
+text-decoration: none;
+    color: black;
+}
+#home:hover{
+     color: #466365;
+ }
 #target{
     margin: 0;
     padding: 0;
@@ -21,7 +28,7 @@ h1 {
 
 }
 body{
-    background-color: #B0F2B4;
+    background-color: #CEB3AB;
 }
 img {
     width:100%;
@@ -31,6 +38,7 @@ img {
 }
 
 button{
+    height: 30px;
     width: 13%;
     margin-left: 8%;
 }
@@ -40,21 +48,22 @@ button{
     height:30px
 }
 
-
+#search-form{
+    padding-left: 8%;
+}
 article {
     margin: 10px;
     width: 32%;
     padding: 0px;
     box-sizing: border-box;
-    background-color: #FFD4CA;
+    background-color: #C4C6E7;
     border-color: black;
     border-style: solid;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
 
 article header {
-    background-color: #FFD4CA;
-
+    background-color: #C4C6E7;
     color: #000;
 }
 
@@ -87,7 +96,7 @@ p {
 }
 
 
-a {
+#link {
     text-align: left;
     word-wrap: break-word;
     border-top-color: black ;

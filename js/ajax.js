@@ -39,7 +39,7 @@ form.addEventListener('submit', async (ev) => {
       let p2 = document.createElement('p');
       let p3 = document.createElement('p');
       let a = document.createElement('a');
-
+      a.setAttribute('id', 'link');
       let showName = '';
       let genresText = '';
       let summaryText = '';
@@ -97,11 +97,5 @@ form.addEventListener('submit', async (ev) => {
         article.innerHTML += tvShows[i].show.summary;
       }
     }
-  }
-});
-form.addEventListener('keyup', function(event) {
-  if (event.keyCode === 13) {
-    event.preventDefault();
-    document.querySelector('button[type="submit"]').click();
   }
 });
