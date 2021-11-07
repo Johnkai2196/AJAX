@@ -2,9 +2,8 @@ html {
     font-family: Verdana, Arial, Helvetica;
 }
 
-h1{
+h1 {
     background-color: #BAA5FF;
-
     padding: 5px;
     margin-top: 0;
     margin-bottom: 20px;
@@ -12,14 +11,16 @@ h1{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
 
-#home:link,#home:visited{
-text-decoration: none;
+#home:link, #home:visited {
+    text-decoration: none;
     color: black;
 }
-#home:hover{
-     color: #466365;
- }
-#target{
+
+#home:hover {
+    color: #466365;
+}
+
+#target {
     margin: 0;
     padding: 0;
     display: flex;
@@ -27,17 +28,20 @@ text-decoration: none;
     justify-content: space-evenly;
 
 }
-body{
+
+body {
     background-color: #CEB3AB;
 }
+
 img {
-    width:100%;
-}
-#imgNo{
-   padding-top: 20px
+    width: 100%;
 }
 
-button{
+#imgNo {
+    padding-top: 20px
+}
+
+button {
     height: 30px;
     width: 13%;
     margin-left: 8%;
@@ -45,12 +49,13 @@ button{
 
 #query {
     width: 68%;
-    height:30px
+    height: 30px
 }
 
-#search-form{
+#search-form {
     padding-left: 8%;
 }
+
 article {
     margin: 10px;
     width: 32%;
@@ -67,7 +72,8 @@ article header {
     color: #000;
 }
 
-article h2 { word-wrap: break-word;
+article h2 {
+    word-wrap: break-word;
     margin: 0;
     text-align: center;
     border-bottom-color: black;
@@ -89,7 +95,7 @@ figure img {
 p {
     text-align: left;
     word-wrap: break-word;
-    border-top-color: black ;
+    border-top-color: black;
     border-top-style: solid;
     padding: 7px;
     margin: 0px;
@@ -99,13 +105,14 @@ p {
 #link {
     text-align: left;
     word-wrap: break-word;
-    border-top-color: black ;
+    border-top-color: black;
     border-top-style: solid;
     padding: 7px;
     margin: 0px;
     display: block;
 
 }
+
 #myBtn {
     display: none;
     position: fixed;
@@ -115,10 +122,8 @@ p {
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: red;
+    background-color: #BAA5FF;
     color: white;
     cursor: pointer;
-    padding: 15px;
     border-radius: 4px;
 }
-@media {}
