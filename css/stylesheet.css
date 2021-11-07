@@ -129,7 +129,11 @@ p {
 }
 
 @media only screen and (max-width: 768px) {
-    article{
+    article {
         width: 100%;
+    }
+
+    #myBtn {
+        font-size: 100%;
     }
 }
