@@ -127,3 +127,9 @@ p {
     cursor: pointer;
     border-radius: 4px;
 }
+
+@media only screen and (max-width: 768px) {
+    article{
+        width: 100%;
+    }
+}
